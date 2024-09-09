@@ -1,0 +1,40 @@
+
+
+
+.about-section .about-content_img{
+width: 100%;
+height: 100%;
+}
+
+.about-section .about-content__play{
+
+    position: absolute;
+    color:#fff;
+    background-color: var(--bs-color-primary);
+    border-radius: 50px;
+    display: flex;
+    font-size: 1.3rem;
+    padding: 20px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about-section  .about-content__play_circle{
+    position: absolute;
+    background-color: var(--bs-color-primary);
+    padding: 45px;
+    z-index: 0;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.6;
+}
+
+.about-section .about_content__icon{
+color: var(--bs-color-primary);
+font-size: 1.2rem;
+line-height: 1.4rem;
+}

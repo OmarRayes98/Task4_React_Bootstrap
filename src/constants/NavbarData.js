@@ -1,0 +1,36 @@
+export const navbarData = [
+    {
+        id:1,
+        name:'home'
+    },
+    {
+        id:2,
+        name:'about'
+    },
+    {
+        id:3,
+        name:'services'
+    },
+    {
+        id:4,
+        name:'departments'
+    },
+    {
+        id:5,
+        name:'doctors'
+    },
+    {
+        id:6,
+        name:'dropdown',
+        children:[
+            {id:61,
+            name:'default'
+            }
+        ]
+    },
+    {
+        id:7,
+        name:'contact'
+    }
+
+]

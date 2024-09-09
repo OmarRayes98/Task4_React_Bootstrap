@@ -1,0 +1,21 @@
+.footer{
+    background-color: #f7fcfc !important;
+}
+
+.footer p{
+    color: rgb(140, 140, 140);
+    font-size: 0.9rem;
+}
+
+.footer .footer__icon{
+border: 1px solid gray;
+padding: 7px;
+border-radius: 50px;
+width: 45px;
+height: 45px;
+text-align: center;
+}
+.footer .footer__icon svg{
+color: gray;
+font-size: 1.2rem;
+}

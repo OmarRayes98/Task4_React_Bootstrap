@@ -1,0 +1,28 @@
+
+
+.heading-common .heading-common_h2,
+.heading-common .heading-common_h2_left0{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.heading-common .heading-common_h2::after,
+.heading-common .heading-common_h2_left0::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    border: 2px solid var(--bs-color-primary);
+    transform: translate(-50%, -50%);
+
+}
+
+.heading-common .heading-common_h2::after{
+    left: 50%;
+}
+
+.heading-common .heading-common_h2_left0::after{
+    left: 0%;
+    transform: translate(0%, 0%);
+
+}

@@ -1,0 +1,84 @@
+.header .navbar{
+padding: 1.2rem 0px ;
+top: 41px ;
+transition: background-color .5s ease-out , box-shadow .3s ease-out,top .2s ease-in-out;
+
+}
+
+.brand-size{
+    width: 130px;
+    height: 45px;
+}
+
+.navbar .navbar__toggle{
+padding: 0px;
+
+}
+.navbar  .navbar_transition{
+    transition: all .2s ease-in-out ;
+}
+
+
+
+.navbar .navbar__toggle:focus{
+    box-shadow: none;
+}
+
+.navbar .custom-link{
+    font-weight: 500 ;
+    transition: all .2s ease-in-out ;
+}
+
+.navbar .custom-link:hover,
+.navbar .custom-link:first-child{
+    color: var(--bs-color-primary) ;
+}
+
+
+@-webkit-keyframes SHOW-BOX {
+    0% {
+        
+        transform: rotate(-100deg); /* Start with a rotation */
+    }
+    100% {
+        
+        transform: rotate(0deg); /* End with no rotation */
+    }
+}
+@-moz-keyframes SHOW-BOX {
+    0% {
+        
+        transform: rotate(-100deg);
+    }
+    100% {
+        
+        transform: rotate(0deg);
+    }
+}
+@-o-keyframes SHOW-BOX {
+    0% {
+        
+        transform: rotate(-100deg);
+    }
+    100% {
+        
+        transform: rotate(0deg);
+    }
+}
+@keyframes SHOW-BOX {
+    0% {
+        
+        transform: rotate(-100deg);
+    }
+    100% {
+        
+        transform: rotate(0deg);
+    }
+}
+
+.animate-rotate{
+    -webkit-animation: SHOW-BOX .5s ease;
+    -moz-animation: SHOW-BOX .5s ease;
+    -o-animation: SHOW-BOX .5s ease;
+    animation: SHOW-BOX .5s ease;
+}

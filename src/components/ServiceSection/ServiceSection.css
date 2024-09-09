@@ -1,0 +1,12 @@
+.service-section .service-section__icon {
+    padding: 20px;
+    border-radius: 50px;
+    margin: 10px 0px;
+    display: inline-block;
+
+}
+.service-section .service-section__icon svg{
+    color: var(--bs-color-primary);
+    font-size: 1.5rem;
+    line-height: 0px;
+}

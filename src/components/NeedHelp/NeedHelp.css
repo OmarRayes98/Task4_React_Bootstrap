@@ -1,0 +1,15 @@
+.need-help{
+    background-color:var(--bs-color-primary);
+    padding: 70px 0px;
+}  
+
+.need-help .custom-button{
+    border-width: 2px;
+    transition: color .2s ease-in-out , border-color .2s ease-in-out;
+}
+
+.need-help .custom-button:hover{
+    color: black !important;
+    border-color: black !important;
+    background-color: transparent;
+}

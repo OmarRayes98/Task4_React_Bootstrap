@@ -1,0 +1,15 @@
+.about-last .about-last_img{
+    width: 100%;
+    height: 100%;
+    }
+
+
+.about-last .about-last__icon{
+    color: var(--bs-color-primary) ;
+    font-size: 1.4rem;
+    background-color: #fff;
+    padding: 12px;
+    line-height: 0px;
+
+}
+

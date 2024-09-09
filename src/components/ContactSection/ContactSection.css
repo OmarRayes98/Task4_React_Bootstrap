@@ -1,0 +1,15 @@
+.contact .contact__icon{
+    border-radius: 50px;
+    border: 3px dotted var(--bs-color-primary);
+    padding: 15px;
+    width: 75px;
+    margin: 0px auto;
+}
+
+.contact .input{
+    border-radius: 3px;
+}
+
+.contact .input::placeholder{
+    color: rgb(186, 186, 186);
+}

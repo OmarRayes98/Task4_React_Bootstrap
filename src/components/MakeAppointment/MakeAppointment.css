@@ -1,0 +1,12 @@
+
+.make-appointment{
+background-color: #f7fcfc !important;
+}
+
+.make-appointment .input{
+    border-radius: 2px;
+}
+
+.make-appointment .input::placeholder{
+    color: rgb(174, 173, 173);
+}

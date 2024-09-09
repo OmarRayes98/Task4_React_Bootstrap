@@ -1,0 +1,9 @@
+.accordion{
+    background-color: #f7fcfc !important;
+}
+
+.accordion .accodion__item,
+.accordion .accodion__item .accordion-header,
+.accordion .accodion__item .accordion-header .accordion-button{
+    border-radius: 7px ;
+}

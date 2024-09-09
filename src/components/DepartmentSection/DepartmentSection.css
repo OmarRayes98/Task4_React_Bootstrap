@@ -1,0 +1,35 @@
+
+.department{
+    padding-bottom: 80px !important;
+}
+
+.department .department__types{
+    height: 170px;
+    overflow-y: auto;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.department .department__types p:hover{
+    color: var(--bs-color-primary);
+}
+
+.department .department__types::-webkit-scrollbar{
+    width: 5px;
+}
+
+.department .department__img{
+    width: 200px;
+    height: auto;
+}
+
+
+@media (max-width:768px) {
+    
+    .department .department__img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        
+    }
+}
