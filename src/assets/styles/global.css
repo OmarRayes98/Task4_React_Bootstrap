@@ -19,10 +19,13 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth ;
+    scroll-padding-top: 105px;
+}
 
 body {
     font-family: var(--font-family-primary);
-    scroll-behavior: smooth ;
 }
 
 .bg-primary-color{
@@ -43,6 +46,10 @@ body {
     background-color: var(--bs-color-primary) !important;
 
 }
+
+main{
+    overflow-x: hidden;
+}
     
 ::-webkit-scrollbar {
 	width: 10px;
@@ -56,3 +63,43 @@ body {
 	background-color: var(--scroll-color);
 	border-radius: 5px;
 }
+
+
+/*for animation card hover ::after.ltr-effect ,*/
+
+.tp-effect,
+.ltr-effect{
+    position: relative;
+}
+
+.ltr-effect::after ,
+.tp-effect::after{
+position:absolute;
+content: "";
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #333;
+opacity: 0.1;
+z-index: -1;
+}
+
+.ltr-effect::after{
+    width: 0; 
+    transition: width 0.5s;
+}
+
+.tp-effect::after{
+    height: 0;
+    transition: height 0.5s;
+
+}
+
+.ltr-effect:hover::after{
+    width: 100%;
+}
+.tp-effect:hover::after{
+    height: 100%;
+}
+

@@ -57,6 +57,7 @@
     }
 }
 
+
 @media (max-width:379px){
     .carousel{
         margin-top: 120px !important;
@@ -84,3 +85,9 @@
 
 }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel .carusel_item {
+      transition: transform .6s ease-in-out ;
+    }
+  }

@@ -4,7 +4,7 @@ import  Container  from "react-bootstrap/Container";
 
 const NeedHelp = () => {
   return (
-    <section className="need-help text-center text-white">
+    <section className="need-help text-center text-white" data-aos="fade-up">
         <Container>
         <h3>
         In an emergency? Need help now?

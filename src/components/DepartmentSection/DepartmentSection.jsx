@@ -22,7 +22,7 @@ const DepartmentSection = () => {
     subtext="Duis aute irure dolor in reprehenderit in voluptate"
     />
 
-<Row className="">
+<Row className="" data-aos="fade-up">
         <Col xs="12" md="3">
         {
             <section className="department__types">
@@ -38,10 +38,10 @@ const DepartmentSection = () => {
 
         </Col>
 
-        <Col xs="12" md="9">
+        <Col xs="12" md="9" className="position-relative">
 
         {categoryInfoData.map((item)=>(
-                    <section className="gap-3 my-5 my-md-0 flex-column-reverse flex-md-row" style={{display: activeCategory===item.type ?'flex':'none' }} key={item.id}>
+                    <section className={`position-absolute gap-3 my-5 my-md-0 d-flex flex-column-reverse flex-md-row opacity-0 ${activeCategory===item.type ?'active-category':''}`}  key={item.id}>
 
                     <section >
                     <h3>

@@ -20,7 +20,9 @@ import CopyRight from "./components/CopyRight/CopyRight"
 import { useCallback, useEffect, useState } from "react"
 import Button from "react-bootstrap/Button"
 import { FaArrowUp } from "react-icons/fa";
-import useThrottled from "./hooks/useThrottled"
+import useThrottled from "./hooks/useThrottled";
+import Aos from "aos"
+
 
 function App() {
   const [visibleTop , setVisibleTop] = useState(false)
@@ -48,6 +50,12 @@ function App() {
   const handleScrollUp = () => {
     window.scrollTo({ top:0, behavior: "smooth" });
   };
+
+
+  useEffect(()=>{
+    Aos.init();
+
+  },[])
 
 
   return (

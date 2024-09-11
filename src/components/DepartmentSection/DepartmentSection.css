@@ -18,6 +18,12 @@
     width: 5px;
 }
 
+
+.department .active-category{
+opacity: 1 !important;
+transition: opacity .4s ease-in-out;
+}
+
 .department .department__img{
     width: 200px;
     height: auto;

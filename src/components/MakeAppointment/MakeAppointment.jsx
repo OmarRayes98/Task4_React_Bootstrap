@@ -14,7 +14,7 @@ const MakeAppointment = () => {
       subtext="Duis aute irure dolor in reprehenderit in voluptate velit Duis aute irure reprehenderit in voluptate "
       />
     
-    <Row className="py-3">
+    <Row className="py-3" data-aos="fade-up">
             <Col className="col-12 col-md-6 col-lg-4 my-3">
             <Form.Control className="input py-2" type="text" placeholder="Your Name" />
             </Col>
@@ -45,7 +45,7 @@ const MakeAppointment = () => {
             </Col>
     </Row>
 
-    <div className="w-100 text-center">
+    <div className="w-100 text-center" >
     <Button className="border-0 px-4  order-lg-1 bg-primary-color ms-auto ms-sm-4" variant="primary" >Make an Appointment</Button>
     </div>
     

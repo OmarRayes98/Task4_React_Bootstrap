@@ -7,3 +7,15 @@
 .accordion .accodion__item .accordion-header .accordion-button{
     border-radius: 7px ;
 }
+
+.accordion .accodion__item .accordion-collapse{
+    transition: height 0.15s ease-in-out;
+}
+.accordion .accodion__item .accordion-header .accordion-button::after{
+    transform: rotate(-90deg);
+}
+
+.accordion-button:not(.collapsed)::after{
+    transform: var(--bs-accordion-btn-icon-transform) !important;
+    transition: transform 0.15s ease-in-out;
+}

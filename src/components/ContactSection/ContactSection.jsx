@@ -21,6 +21,7 @@ const ContactSection = () => {
       />
       
        <iframe
+       
   src="https://www.google.com/maps/embed?pb=1m10!1m8!1m3!1d53226.573543487284!2d36.29128!3d33.5102!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2sus!4v1725033723875!5m2!1sar!2sus"
   height="450"
   style={{ border: 'none' }}
@@ -31,7 +32,7 @@ const ContactSection = () => {
 
     <Container>
     <Row className="mt-5">
-        <Col xs="12" md="6">
+        <Col xs="12" md="6" data-aos="fade-right">
         <Row className="gap-4">
             <Col xs="12">
 
@@ -71,7 +72,7 @@ const ContactSection = () => {
         </Col>
 
 
-        <Col xs="12" md="6" className="mt-4 mt-md-0">
+        <Col xs="12" md="6" className="mt-4 mt-md-0" data-aos="fade-left">
         <Card className={`py-4 px-4 border-0 shadow text-center`}>
         <Row className="">
 

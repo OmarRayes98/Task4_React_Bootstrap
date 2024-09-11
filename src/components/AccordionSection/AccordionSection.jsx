@@ -12,7 +12,7 @@ const AccordionSection = () => {
         subtext="Duis aute irure dolor in reprehenderit in voluptate"
         />
 
-<Accordion >
+<Accordion data-aos="fade-up" >
       <Accordion.Item className="my-4 accodion__item" eventKey="0">
         <Accordion.Header>Question 1 ?</Accordion.Header>
         <Accordion.Body>

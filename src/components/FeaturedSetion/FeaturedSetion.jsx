@@ -12,13 +12,13 @@ import { LuBuilding2 } from "react-icons/lu";
 const FeaturedSetion = () => {
   return (
     <Row className="about-last padding-bottom">
-        <Col xs="12" md="6">
+        <Col xs="12" md="6" data-aos="fade-right">
         <div className="about-last_img position-relative">
             <img src={featurImage} className="h-100 w-100" alt="Feature Image" />
         </div>
         </Col>
 
-        <Col xs="12" md="6" className="mt-4 mt-md-0">
+        <Col xs="12" md="6" className="mt-4 mt-md-0" data-aos="fade-left">
 
         <HeadingCommon title="Duis aute irure dolor in reprehenderit" 
         subtext="Duis aute irure dolor in reprehenderit in voluptate velit esse

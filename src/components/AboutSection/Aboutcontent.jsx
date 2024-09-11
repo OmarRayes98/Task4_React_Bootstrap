@@ -7,9 +7,9 @@ import imageAbout from "../../assets/images/about.jpg";
 
 const Aboutcontent = () => {
   return (
-    <Row className="">
-        <Col xs="12" md="6">
-        <div className="about-content_img position-relative">
+    <Row className="" >
+        <Col xs="12" md="6" data-aos="fade-right">
+        <div className="about-content_img position-relative" >
             <img src={imageAbout} className="h-100 w-100" alt="About Image" />
 
             <span className="about-content__play">
@@ -19,7 +19,7 @@ const Aboutcontent = () => {
         </div>
         </Col>
 
-        <Col xs="12" md="6" className="mt-4 mt-md-0">
+        <Col xs="12" md="6" className="mt-4 mt-md-0" data-aos="fade-left">
         <h3>
         Lorem ipsum is placeholder text commonly used in the graphic
         , print.

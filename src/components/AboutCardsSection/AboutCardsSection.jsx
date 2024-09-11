@@ -9,7 +9,7 @@ const AboutCardsSection = () => {
 
 
   return (
-    <Row className="">
+    <Row className="" data-aos="fade-up">
       {cardsAboutData.map((item) => (
         <Col key={item.id}  className="col-12 col-md-6 col-lg-3 my-2">
           <MainCustomCard
@@ -17,6 +17,7 @@ const AboutCardsSection = () => {
             title={item.title}
             text={item.text}
             paddingY="py-2"
+            animation="ltr-effect"
             titleCustomClass="fw-bold fs-4"
             subCustomClass="text-muted pe-0"
             bodyCustomClass="d-flex align-items-center gap-3"

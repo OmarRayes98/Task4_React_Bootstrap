@@ -17,7 +17,7 @@ const DoctorsSection = () => {
         />
 
         <Container>
-        <Row>
+        <Row data-aos="fade-up">
             {doctorsData.map((item)=>(
             <Col key={item.id}  className="col-12 col-md-6 col-lg-3 my-2">
 

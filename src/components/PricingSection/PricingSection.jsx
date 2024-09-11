@@ -6,15 +6,15 @@ import Card from 'react-bootstrap/Card';
 import "./PricingSection"
 const PricingSection = () => {
   return (
-    <section className="pricing padding-y">
+    <section className="pricing padding-y" data-aos="fade-up" data-aos-duration="800">
         <HeadingCommon
         title="Pricing"
         subtext="Duis aute irure dolor in reprehenderit in voluptate"
         />
 
-        <Row>
+        <Row >
             <Col className="col-12 col-md-6 col-lg-3 my-2">
-            <Card className="text-center">
+            <Card className="text-center bg-transparent tp-effect ">
       <Card.Header className="py-3 fw-bold text-muted">Free</Card.Header>
       
       <Card.Body>
@@ -44,7 +44,7 @@ const PricingSection = () => {
             </Col>
 
             <Col className="col-12 col-md-6 col-lg-3 my-2">
-            <Card className="text-center">
+            <Card className="text-center bg-transparent tp-effect ">
       <Card.Header className="py-3 fw-bold text-muted">Free</Card.Header>
       
       <Card.Body>
@@ -74,7 +74,7 @@ const PricingSection = () => {
             </Col>
 
             <Col className="col-12 col-md-6 col-lg-3 my-2">
-            <Card className="text-center">
+            <Card className="text-center bg-transparent tp-effect ">
       <Card.Header className="py-3 fw-bold text-muted">Free</Card.Header>
       
       <Card.Body>
@@ -104,7 +104,7 @@ const PricingSection = () => {
             </Col>
 
             <Col className="col-12 col-md-6 col-lg-3 my-2">
-            <Card className="text-center">
+            <Card className="text-center bg-transparent tp-effect ">
       <Card.Header className="py-3 fw-bold text-muted">Free</Card.Header>
       
       <Card.Body>
