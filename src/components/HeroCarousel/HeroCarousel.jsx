@@ -11,7 +11,7 @@ const HeroCarousel = () => {
             heroCarouselData.map((item)=>(
             <Carousel.Item key={item.id} className="carusel_item h-100">
                 <img
-                className="d-block w-100 h-100 object-fit-cover object-fit-md-none "
+                className="d-block w-100 h-100 object-fit-cover  "
                 src={item.image}
                 alt={`image ${item.id}`}
                 />

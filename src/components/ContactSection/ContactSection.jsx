@@ -46,8 +46,8 @@ const ContactSection = () => {
             </Col>
 
             <Col xs="12">
-            <Row >
-                <Col xs="12" md="6">
+            <Row className="gap-md-0 gap-4">
+            <Col xs="12" md="6">
 
                 <CardContact
             title="Call Us"
@@ -74,7 +74,7 @@ const ContactSection = () => {
 
         <Col xs="12" md="6" className="mt-4 mt-md-0" data-aos="fade-left">
         <Card className={`py-4 px-4 border-0 shadow text-center`}>
-        <Row className="">
+        <Row className="gap-4">
 
           <Col md="6 my-3">
           <Form.Control className="input py-2" type="text" placeholder="Your Name" />

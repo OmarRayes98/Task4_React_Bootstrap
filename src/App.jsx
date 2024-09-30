@@ -1,3 +1,7 @@
+// import  { Suspense } from "react";
+// import { lazy } from "react";
+
+
 import  Container  from "react-bootstrap/Container"
 import UpperBar from "./components/UpperBar/UpperBar"
 import NavBar from "./components/Navbar/Navbar"
@@ -10,7 +14,7 @@ import FeaturedSetion from "./components/FeaturedSetion/FeaturedSetion"
 import ServiceSection from "./components/ServiceSection/ServiceSection"
 import MakeAppointment from "./components/MakeAppointment/MakeAppointment"
 import DepartmentSection from "./components/DepartmentSection/DepartmentSection"
-import TestmonialSection from "./components/TestmonialSection/TestmonialSection"
+// import TestmonialSection from "./components/TestmonialSection/TestmonialSection"
 import DoctorsSection from "./components/DoctorsSection/DoctorsSection"
 import PricingSection from "./components/PricingSection/PricingSection"
 import AccordionSection from "./components/AccordionSection/AccordionSection"
@@ -23,6 +27,21 @@ import { FaArrowUp } from "react-icons/fa";
 import useThrottled from "./hooks/useThrottled";
 import Aos from "aos"
 
+// const UpperBar = lazy(() => import("./components/UpperBar/UpperBar"));
+// const NavBar = lazy(() => import("./components/Navbar/Navbar"));
+// const HeroCarousel = lazy(() => import("./components/HeroCarousel/HeroCarousel"));
+// const CardsSection = lazy(() => import("./components/CardsSection/CardsSection"));
+// const NeedHelp = lazy(() => import("./components/NeedHelp/NeedHelp"));
+// const AboutSection = lazy(() => import("./components/AboutSection/AboutSection"));
+// const AboutCardsSection = lazy(() => import("./components/AboutCardsSection/AboutCardsSection"));
+// const FeaturedSetion = lazy(() => import("./components/FeaturedSetion/FeaturedSetion"));
+// const ServiceSection = lazy(() => import("./components/ServiceSection/ServiceSection"));
+// const MakeAppointment = lazy(() => import("./components/MakeAppointment/MakeAppointment"));
+// const DepartmentSection = lazy(() => import("./components/DepartmentSection/DepartmentSection"));
+// const DoctorsSection = lazy(() => import("./components/DoctorsSection/DoctorsSection"));
+// const PricingSection = lazy(() => import("./components/PricingSection/PricingSection"));
+// const AccordionSection = lazy(() => import("./components/AccordionSection/AccordionSection"));
+// const ContactSection = lazy(() => import("./components/ContactSection/ContactSection"));
 
 function App() {
   const [visibleTop , setVisibleTop] = useState(false)
@@ -57,49 +76,87 @@ function App() {
 
   },[])
 
+  //susbense for all : one loading to finish the page 
+  // susbense for every component  with same loading and that load has to be 
+  //same position wil be like Focal X agency to see component will show step by step 
 
   return (
-    <>
-      <UpperBar/>
-      <NavBar/>
-      <HeroCarousel/>
+    // <Suspense fallback={<h1>Loading...</h1>}>
+        <>
+        <UpperBar />
+      
+      
+        <NavBar />
+      
+      
+        <HeroCarousel />
+      
       <Container className="padding-y">
-      <CardsSection/>
+        
+          <CardsSection />
+        
       </Container>
 
       <section className="padding-bottom">
-      <NeedHelp/>
+        
+          <NeedHelp />
+        
       </section>
 
       <Container>
-      <AboutSection/>
-      <section className="padding-y">
-      <AboutCardsSection />
-      </section>
+        
+          <AboutSection />
+        
+        <section className="padding-y">
+          
+            <AboutCardsSection />
+          
+        </section>
 
-      <FeaturedSetion/>
+        
+          <FeaturedSetion />
+        
 
-      <ServiceSection/>
+        
+          <ServiceSection />
+        
+      </Container>
+
       
-      </Container>
-
-      <MakeAppointment/>
-
-      <Container className="padding-y">
-        <DepartmentSection/>
-
-        <TestmonialSection/>
-      </Container>
-
-      <DoctorsSection/>
+        <MakeAppointment />
+      
 
       <Container className="padding-y">
-      <PricingSection/>
+        
+          <DepartmentSection />
+        
       </Container>
 
-      <AccordionSection/>
+      
+        <DoctorsSection />
+      
 
-      <ContactSection/>
+      <Container className="padding-y">
+        
+          <PricingSection />
+        
+      </Container>
+
+      
+        <AccordionSection />
+      
+
+      
+        <ContactSection />
+      
+
+      
+      
+
+      
+        <CopyRight />
+      
+    
 
         <Footer/>
 
@@ -108,15 +165,16 @@ function App() {
       { 
     
         visibleTop? 
-        <Button className="btn-top position-fixed border-0 p-3" onClick={handleScrollUp}>
+        <Button className="btn-top position-fixed  p-3 shadow-sm border border-white" onClick={handleScrollUp}>
           <FaArrowUp/>
-        </Button> :
+        </Button> 
+        :
         null
 
       }
 
-
-    </>
+{/* </Suspense> */}
+</>
   )
 }
 

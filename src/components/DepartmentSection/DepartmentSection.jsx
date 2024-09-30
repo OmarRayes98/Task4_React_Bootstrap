@@ -16,7 +16,7 @@ const DepartmentSection = () => {
     }
 
   return (
-    <section className="department" id="departments">
+    <section className="department" id="departments" >
     <HeadingCommon
     title="Departments"
     subtext="Duis aute irure dolor in reprehenderit in voluptate"
@@ -38,10 +38,10 @@ const DepartmentSection = () => {
 
         </Col>
 
-        <Col xs="12" md="9" className="position-relative">
+        <Col xs="12" md="9" className="">
 
         {categoryInfoData.map((item)=>(
-                    <section className={`position-absolute gap-3 my-5 my-md-0 d-flex flex-column-reverse flex-md-row opacity-0 ${activeCategory===item.type ?'active-category':''}`}  key={item.id}>
+                    <section className={`gap-3 my-5 my-md-0 d-flex flex-column-reverse flex-md-row d-none ${activeCategory===item.type ?'active-category':''}`}  key={item.id}>
 
                     <section >
                     <h3>

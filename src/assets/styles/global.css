@@ -24,8 +24,9 @@ html{
     scroll-padding-top: 105px;
 }
 
+
 body {
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-primary) !important;
 }
 
 .bg-primary-color{
